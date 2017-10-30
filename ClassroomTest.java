@@ -11,8 +11,9 @@ public class ClassroomTest {
   }
 
   @Test
-  public String hasName() {
+  public void hasName() {
     String name = this.classroom.getName();
     assertEquals( "E16", name);
   }
+
 }

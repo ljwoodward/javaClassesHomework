@@ -7,4 +7,8 @@ public Classroom( String name ) {
   // this.students = new Student[20]
   }
 
+public String getName() {
+  return this.name;
+}
+
 }

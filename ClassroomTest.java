@@ -9,7 +9,7 @@ public class ClassroomTest {
   @Before
   public void before() {
     this.classroom = new Classroom( "E16" );
-    this.student = new Student( "Chris Marshall")
+    this.student = new Student( "Chris Marshall");
   }
 
   @Test
@@ -17,5 +17,11 @@ public class ClassroomTest {
     String name = this.classroom.getName();
     assertEquals( "E16", name);
   }
+
+  @Test
+  public void classroomStartsEmpty() {
+    assertEquals( 0, classroom.studentCount() );
+  }
+
 
 }

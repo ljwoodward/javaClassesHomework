@@ -4,10 +4,12 @@ import static org.junit.Assert.assertEquals;
 public class ClassroomTest {
 
   Classroom classroom;
+  Student student;
 
   @Before
   public void before() {
     this.classroom = new Classroom( "E16" );
+    this.student = new Student( "Chris Marshall")
   }
 
   @Test

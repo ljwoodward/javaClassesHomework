@@ -18,7 +18,19 @@ public int studentCount() {
       number++;
     }
   }
-  return number; 
+  return number;
+}
+
+public boolean isClassroomFull() {
+  return studentCount() == students.length;
+}
+
+public void add( Student student) {
+  if( isClassroomFull() ) {
+    return;
+  }
+  int studentCount = studentCount();
+  students[ studentCount ] = student;
 }
 
 }

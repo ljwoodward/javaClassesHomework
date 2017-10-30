@@ -37,5 +37,13 @@ public class ClassroomTest {
     assertEquals(20, classroom.studentCount() );
   }
 
-  
+  @Test
+  public void emptyClassroomAfterGraduation() {
+    classroom.add( student );
+    classroom.graduate();
+    assertEquals( 0, classroom.studentCount() );
+  }
+
+
+
 }

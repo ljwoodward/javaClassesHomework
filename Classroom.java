@@ -33,4 +33,10 @@ public void add( Student student) {
   students[ studentCount ] = student;
 }
 
+public void graduate() {
+  for ( int i = 0; i < students.length ; i++ ) {
+    students[i] = null;
+  }
+}
+
 }
